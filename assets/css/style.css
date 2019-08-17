@@ -6,6 +6,7 @@
   justify-content: space-between;
   border-bottom: solid lightslategray;
   margin-bottom: 45px;
+  font-family: 'Lato', sans-serif;
 }
 
 #name {
@@ -28,6 +29,7 @@
   height: 600px;
   margin-left: 18%;
   background-color: ghostwhite;
+  font-family: 'Lato', sans-serif;
 
 }
 
@@ -110,3 +112,4 @@ a {
   margin-top: 15px;
   margin-right: 20%;
 }
+
