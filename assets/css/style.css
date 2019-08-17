@@ -13,7 +13,9 @@
   text-align: center;
   padding-top: 15px;
   width: 200px;
+  color: white;
   font-size: 24px;
+  font-weight: bold;
   margin-left: 18%;
 }
 
@@ -23,7 +25,7 @@
 
 .bod {
   width: 960px;
-  height: 450px;
+  height: 600px;
   margin-left: 18%;
   background-color: ghostwhite;
 
@@ -36,7 +38,11 @@
   margin-bottom: 25px;
   padding-bottom: 25px;
   border-bottom: solid lightslategray;
+  color: steelblue;
+  font-weight: bold;
 }
+
+
 
 .image {
   float: left;
@@ -44,4 +50,24 @@
 
 #me {
   width: 250px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  }
+
+#message {
+  height: 200px;
+}
+
+#forms {
+  margin-left: 35px;
+  margin-right: 35px;
 }
