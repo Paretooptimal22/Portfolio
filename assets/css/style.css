@@ -1,0 +1,47 @@
+#navbar {
+  background-color: ghostwhite;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid lightslategray;
+  margin-bottom: 45px;
+}
+
+#name {
+  background-color: steelblue;
+  text-align: center;
+  padding-top: 15px;
+  width: 200px;
+  font-size: 24px;
+  margin-left: 18%;
+}
+
+#links {
+
+}
+
+.bod {
+  width: 960px;
+  height: 450px;
+  margin-left: 18%;
+  background-color: ghostwhite;
+
+}
+
+.title {
+  font-size: 24px;
+  padding-top: 25px;
+  padding-left: 35px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: solid lightslategray;
+}
+
+.image {
+  float: left;
+}
+
+#me {
+  width: 250px;
+}
