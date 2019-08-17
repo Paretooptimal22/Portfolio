@@ -71,3 +71,31 @@ input[type=text], select {
   margin-left: 35px;
   margin-right: 35px;
 }
+
+.Pimage {
+  height: 250px;
+  width: 250px;
+  float: left;
+  margin-left: 35px;
+  margin-bottom: 35px;
+  position: relative;
+  display: inline-block
+}
+
+img {
+  height: 250px;
+  width: 250px;
+}
+
+.Pimage .label {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 70%;
+  text-align: center;
+  background-color: steelblue;
+  height: 50px;
+  padding-top: 25px;
+}
