@@ -98,4 +98,15 @@ img {
   background-color: steelblue;
   height: 50px;
   padding-top: 25px;
+  color: white
+}
+
+a {
+  color: slategray;
+  text-decoration: none
+}
+
+#links {
+  margin-top: 15px;
+  margin-right: 20%;
 }
