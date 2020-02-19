@@ -17,6 +17,10 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1,
   },
+  toolbar: {
+    background: 'white',
+    color: 'black',
+  }
 }))
 
 const Nav = () => {
@@ -25,15 +29,15 @@ const Nav = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
+      <AppBar position="static" elevation={0}>
+        <Toolbar className={classes.toolbar}>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title} align="center">
-            Portfolio
+            PORTFOLIO
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit"></Button>
         </Toolbar>
       </AppBar>
     </div>
