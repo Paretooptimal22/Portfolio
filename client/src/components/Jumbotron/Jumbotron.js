@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid, Container } from '@material-ui/core'
-import mountains from './jumbotronPics/mountains7.jpg'
+import mountains from './jumbotronPics/mountains8.jpg'
 
 const useStyles = makeStyles(theme => ({
   root: {

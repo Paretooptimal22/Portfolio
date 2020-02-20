@@ -23,7 +23,7 @@ const Home = () => {
         </Grid>
         <Grid item xs={12}>
           <Typography variant="subtitle1" align="center" gutterBottom>
-            WEB DEVELOPER
+            FULL STACK WEB DEVELOPER
           </Typography>
         </Grid>
       </Grid>
