@@ -11,6 +11,12 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     textAlign: 'center',
     padding: 0
+  },
+  img: {
+    margin: 'auto',
+    display: 'block',
+    maxWidth: '100%',
+    maxHeight: '100%',
   }
   
 }))
@@ -19,9 +25,9 @@ const Jumbotron = () => {
   const classes = useStyles()
   return (
     <Grid className={classes.root} maxWidth="xl">
-      <Grid item>
+      <Grid item xs={12}>
         <div className={classes.div}>
-          <img src={mountains} alt="mountains"/>
+          <img className={classes.img} src={mountains} alt="mountains"/>
         </div>
       </Grid>
     </Grid>

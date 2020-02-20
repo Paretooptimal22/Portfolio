@@ -15,20 +15,18 @@ const Home = () => {
       <Nav />
       <br/>
       <br/>
-      <Container>
-        <Grid>
-          <Grid item xs={12}>
-            <Typography variant="h6" align="center" gutterBottom>
-              KEVIN CHRISTIAN YOUNG
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography variant="subtitle1" align="center" gutterBottom>
-              WEB DEVELOPER
-            </Typography>
-          </Grid>
+      <Grid>
+        <Grid item xs={12}>
+          <Typography variant="h6" align="center" gutterBottom>
+            KEVIN CHRISTIAN YOUNG
+          </Typography>
         </Grid>
-      </Container>
+        <Grid item xs={12}>
+          <Typography variant="subtitle1" align="center" gutterBottom>
+            WEB DEVELOPER
+          </Typography>
+        </Grid>
+      </Grid>
       <br/>
       <Jumbotron />
       
