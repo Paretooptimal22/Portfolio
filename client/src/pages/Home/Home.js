@@ -11,27 +11,28 @@ import Jumbotron from '../../components/Jumbotron'
 
 const Home = () => {
   return (
-    <div>
-      <Nav />
-      <br/>
-      <br/>
-      <Grid>
-        <Grid item xs={12}>
-          <Typography variant="h6" align="center" gutterBottom>
-            KEVIN CHRISTIAN YOUNG
-          </Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Typography variant="subtitle1" align="center" gutterBottom>
-            FULL STACK WEB DEVELOPER
-          </Typography>
-        </Grid>
+    <Grid>
+      <Grid item xs={12}>
+        <Nav />
       </Grid>
-      <br/>
-      <Jumbotron />
+      <br />
+      <Grid item xs={12}>
+        <Typography variant="h6" align="center" gutterBottom>
+          KEVIN CHRISTIAN YOUNG
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="subtitle1" align="center" gutterBottom>
+          FULL STACK WEB DEVELOPER
+        </Typography>
+      </Grid>
+      <br />
+      <Grid item xs={12}>
+        <Jumbotron />
+      </Grid>
       
-
-    </div>
+    </Grid>
+    
   )
 }
 
