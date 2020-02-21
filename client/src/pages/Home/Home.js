@@ -12,16 +12,16 @@ import Jumbotron from '../../components/Jumbotron'
 const Home = () => {
   return (
     <Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} alignItems="center">
         <Nav />
       </Grid>
       <br />
-      <Grid item xs={12}>
+      <Grid item xs={12} alignItems="center">
         <Typography variant="h6" align="center" gutterBottom>
           KEVIN CHRISTIAN YOUNG
         </Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} alignItems="center">
         <Typography variant="subtitle1" align="center" gutterBottom>
           FULL STACK WEB DEVELOPER
         </Typography>
