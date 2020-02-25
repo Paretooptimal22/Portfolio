@@ -3,15 +3,18 @@ import { makeStyles } from '@material-ui/core/styles'
 import {
   Container,
   Grid,
-  Typography
+  Typography,
+  Paper
 } from '@material-ui/core'
 import Nav from '../../components/Nav'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1,
+    
   },
-  
+  paper: {
+    
+  }
 }))
 
 const About = () => {
@@ -25,9 +28,9 @@ const About = () => {
       </Grid>
       <br/>
       <Grid item xs={12} alignItems="center" justify="center">
-        <Typography variant="h6" align="center" gutterBottom>
-          About Me
-        </Typography>
+        <Paper elevation={0} variant="outlined" className={classes.paper}>
+          
+        </Paper>
       </Grid>
     </Grid>
   )
