@@ -18,11 +18,8 @@ import {
 } from '@material-ui/core'
 //  icons
 import HomeIcon from '@material-ui/icons/Home'
-import PlayArrowIcon from '@material-ui/icons/PlayArrow'
-import FitnessCenterIcon from '@material-ui/icons/FitnessCenter'
-import DirectionsRunIcon from '@material-ui/icons/DirectionsRun'
-import ChildFriendlyIcon from '@material-ui/icons/ChildFriendly'
-import AccessTimeIcon from '@material-ui/icons/AccessTime';
+import WorkIcon from '@material-ui/icons/Work';
+import ContactMailIcon from '@material-ui/icons/ContactMail'
 import InfoIcon from '@material-ui/icons/Info'
 import DrawerContext from '../../utils/DrawerContext'
 
@@ -89,7 +86,7 @@ const NavDrawerGuts = props => {
           <ListItem button key={'About'}>
             <Grid container spacing={3}>
               <Grid item xs={4}>
-                <PlayArrowIcon />
+                <InfoIcon />
               </Grid>
               <Grid item xs={8} className={classes.gridItem}>
                 <Typography
@@ -106,7 +103,7 @@ const NavDrawerGuts = props => {
           <ListItem button key={'Projects'}>
             <Grid container spacing={3}>
               <Grid item xs={4}>
-                <FitnessCenterIcon />
+                <WorkIcon />
               </Grid>
               <Grid item xs={8} className={classes.gridItem}>
                 <Typography
@@ -123,7 +120,7 @@ const NavDrawerGuts = props => {
           <ListItem button key={'Contact'}>
             <Grid container spacing={3}>
               <Grid item xs={4}>
-                <DirectionsRunIcon />
+                <ContactMailIcon />
               </Grid>
               <Grid item xs={8} className={classes.gridItem}>
                 <Typography
