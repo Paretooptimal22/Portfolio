@@ -21,10 +21,10 @@ const Home = () => {
 
   return (
     <Grid container className={classes.root}>
-      <Grid item xs={12} alignItems="center" justify="center">
+      {/* <Grid item xs={12} alignItems="center" justify="center">
         <Nav />
       </Grid>
-      <br />
+      <br /> */}
       <Grid item xs={12} alignItems="center" justify="center">
         <Typography variant="h6" align="center" gutterBottom>
           KEVIN CHRISTIAN YOUNG

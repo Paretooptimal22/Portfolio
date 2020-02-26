@@ -23,9 +23,9 @@ const About = () => {
 
   return(
     <Grid container className={classes.root}>
-      <Grid item xs={12} className={classes.nav} alignItems="center" justify="center">
+      {/* <Grid item xs={12} className={classes.nav} alignItems="center" justify="center">
         <Nav />
-      </Grid>
+      </Grid> */}
       <br/>
       <Grid item xs={12} alignItems="center" justify="center">
         <Paper elevation={0} variant="outlined" className={classes.paper}>
