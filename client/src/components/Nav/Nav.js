@@ -30,7 +30,8 @@ const useStyles = makeStyles(theme => ({
   toolbar: {
     background: 'white',
     color: 'black',
-    padding: 10
+    paddingLeft: '10px',
+    paddingRight: '10px'
   }
 }))
 
