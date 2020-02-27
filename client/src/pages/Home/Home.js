@@ -7,6 +7,7 @@ import {
 } from '@material-ui/core'
 import Nav from '../../components/Nav'
 import Jumbotron from '../../components/Jumbotron'
+import Stepper from '../../components/Stepper'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -39,7 +40,9 @@ const Home = () => {
       <Grid item xs={12}>
         <Jumbotron />
       </Grid>
-      
+      <Grid item xs={12}>
+        <Stepper />
+      </Grid>
     </Grid>
     
   )
