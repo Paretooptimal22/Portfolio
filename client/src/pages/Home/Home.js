@@ -6,8 +6,8 @@ import {
   Typography
 } from '@material-ui/core'
 import Nav from '../../components/Nav'
-import Jumbotron from '../../components/Jumbotron'
 import Stepper from '../../components/Stepper'
+import Parallax from '../../components/Parallax'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     margin: 'auto',
     display: 'flex',
     position: 'relative',
-    justifyContent: 'center'
+    justifyContent: 'center',
   }
   
 
@@ -48,7 +48,7 @@ const Home = () => {
       </Grid>
       <br />
       <Grid item xs={12}>
-        <Jumbotron />
+        <Parallax />
       </Grid>
       <br/>
       <Grid item xs={12} alignItems="center" justify="center" className={classes.name}>

@@ -29,14 +29,14 @@ const useStyles = makeStyles({
     flexGrow: 1,
     marginTop: 50,
     alignItems: 'center',
-    background: '#455a64'
+    background: '#455a64',
   },
   header: {
     display: 'flex',
     alignItems: 'center',
     height: 50,
     paddingLeft: 4,
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
   },
   img: {
     height: 255,
