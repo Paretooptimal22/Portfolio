@@ -13,6 +13,16 @@ const useStyles = makeStyles(theme => ({
   root: {
 
   },
+  name: {
+    paddingTop: '50px'
+  },
+  step: {
+    margin: 'auto',
+    display: 'flex',
+    position: 'relative',
+    justifyContent: 'center'
+  }
+  
 
 }))
 
@@ -40,7 +50,13 @@ const Home = () => {
       <Grid item xs={12}>
         <Jumbotron />
       </Grid>
-      <Grid item xs={12}>
+      <br/>
+      <Grid item xs={12} alignItems="center" justify="center" className={classes.name}>
+        <Typography variant="h6" align="center" gutterBottom>
+          PROJECTS
+        </Typography>
+      </Grid>
+      <Grid item xs={12} className={classes.step}>
         <Stepper />
       </Grid>
     </Grid>

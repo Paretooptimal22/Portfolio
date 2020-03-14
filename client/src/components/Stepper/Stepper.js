@@ -23,17 +23,20 @@ const projectSteps = [
   }
 ] 
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   root: {
     maxWidth: 400,
     flexGrow: 1,
+    marginTop: 50,
+    alignItems: 'center',
+    background: '#455a64'
   },
   header: {
     display: 'flex',
     alignItems: 'center',
     height: 50,
-    paddingLeft: theme.spacing(4),
-    backgroundColor: theme.palette.background.default,
+    paddingLeft: 4,
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'
   },
   img: {
     height: 255,
@@ -42,7 +45,7 @@ const useStyles = makeStyles(theme => ({
     overflow: 'hidden',
     width: '100%',
   },
-}))
+})
 
 const Stepper = () => {
   const classes = useStyles()
