@@ -21,36 +21,34 @@ import HomeIcon from '@material-ui/icons/Home'
 import WorkIcon from '@material-ui/icons/Work';
 import ContactMailIcon from '@material-ui/icons/ContactMail'
 import InfoIcon from '@material-ui/icons/Info'
+import GitHubIcon from '@material-ui/icons/GitHub'
 import DrawerContext from '../../utils/DrawerContext'
 
 const useStyles = makeStyles({
   list: {
     width: 250,
     height: '100%',
-    background: '#455a64'
+    background: '#00b8d4'
   },
   fullList: {
     width: 'auto',
   },
   link: {
-    color: '#424242',
     textDecorationLine: 'none'
   },
   gridItem: {
     alignItems: 'center',
     justifyContent: 'center',
     display: 'flex',
-    color: "white"
+    color: "#424242"
   },
   typography: {
-    // "fontFamily": "\"Bangers\"",
-    // "fontSize": 36,
     alignItems: 'center',
     justifyContent: 'center',
     display: 'flex'
   },
   icon: {
-    color: "white"
+    color: "#424242"
   }
 })
 
@@ -122,17 +120,17 @@ const NavDrawerGuts = props => {
           </ListItem>
         </Link>
         {/* contact */}
-        <Link to="/contact" className={classes.link}>
+        <Link to href="https://github.com/Paretooptimal22" className={classes.link}>
           <ListItem button key={'Contact'}>
             <Grid container spacing={3}>
               <Grid item xs={4} className={classes.icon}>
-                <ContactMailIcon />
+                <GitHubIcon />
               </Grid>
               <Grid item xs={8} className={classes.gridItem}>
                 <Typography
                   className={classes.typography}
                   component="span">
-                  Contact
+                  GitHub
                 </Typography>
               </Grid>
             </Grid>

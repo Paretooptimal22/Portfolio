@@ -11,16 +11,28 @@ import Parallax from '../../components/Parallax'
 
 const useStyles = makeStyles(theme => ({
   root: {
-
+    maxWidth: '100%',
+  },
+  grid: {
+    maxWidth: '100%',
+    backgroundColor: '#424242'
   },
   name: {
-    paddingTop: '50px'
+    paddingTop: '25px',
+    color: '#00b8d4'
   },
   step: {
     margin: 'auto',
     display: 'flex',
     position: 'relative',
     justifyContent: 'center',
+  },
+  title: {
+    paddingTop: '50px',
+    color: '#00b8d4'
+  },
+  sub: {
+    color: '#00b8d4'
   }
   
 
@@ -31,35 +43,34 @@ const Home = () => {
   const classes = useStyles()
 
   return (
-    <Grid container className={classes.root}>
-      {/* <Grid item xs={12} alignItems="center" justify="center">
-        <Nav />
-      </Grid>
-      <br /> */}
-      <Grid item xs={12} alignItems="center" justify="center">
-        <Typography variant="h6" align="center" gutterBottom>
-          KEVIN CHRISTIAN YOUNG
+    <div className={classes.root}>
+      <Grid container className={classes.grid}>
+        <Grid item xs={12} alignItems="center" justify="center">
+          <Typography variant="h5" align="center" className={classes.name} gutterBottom>
+            KEVIN CHRISTIAN YOUNG
         </Typography>
-      </Grid>
-      <Grid item xs={12} alignItems="center" justify="center">
-        <Typography variant="subtitle1" align="center" gutterBottom>
-          FULL STACK WEB DEVELOPER
+        </Grid>
+        <Grid item xs={12} alignItems="center" justify="center">
+          <Typography variant="subtitle1" align="center" className={classes.sub} gutterBottom>
+            FULL STACK WEB DEVELOPER
         </Typography>
-      </Grid>
-      <br />
-      <Grid item xs={12}>
-        <Parallax />
-      </Grid>
-      <br/>
-      <Grid item xs={12} alignItems="center" justify="center" className={classes.name}>
-        <Typography variant="h6" align="center" gutterBottom>
-          PROJECTS
+        </Grid>
+        <br />
+        <Grid item xs={12}>
+          <Parallax />
+        </Grid>
+        <br />
+        <Grid item xs={12} alignItems="center" justify="center" className={classes.title}>
+          <Typography variant="h5" align="center" gutterBottom>
+            LATEST PROJECTS
         </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.step}>
+          <Stepper />
+        </Grid>
       </Grid>
-      <Grid item xs={12} className={classes.step}>
-        <Stepper />
-      </Grid>
-    </Grid>
+    </div>
+    
     
   )
 }

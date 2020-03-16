@@ -28,8 +28,8 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   toolbar: {
-    background: 'white',
-    color: 'black',
+    background: '#424242',
+    color: '#00b8d4',
     paddingLeft: '10px',
     paddingRight: '10px'
   }
@@ -66,7 +66,7 @@ const NavGuts = props => {
             onClick={toggleDrawer(true)}>
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title} align="center">
+          <Typography variant="h4" className={classes.title} align="center">
             PORTFOLIO
           </Typography>
           <Button color="inherit"></Button>

@@ -31,8 +31,7 @@ const Parallaxx = _ => {
           strength={800}
         >
           <div>
-            <br />
-            {/* <LaxContainer /> */}
+            
             
           </div>
           <div style={{ height: '500px' }} />

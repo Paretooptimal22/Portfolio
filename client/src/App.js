@@ -43,9 +43,6 @@ const App = () => {
             <Route path="/projects">
               <Projects />
             </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
           </Switch>
         </div>
       </Router>

@@ -25,7 +25,7 @@ const projectSteps = [
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 400,
+    maxWidth: 1000,
     flexGrow: 1,
     marginTop: 50,
     alignItems: 'center',
@@ -36,7 +36,9 @@ const useStyles = makeStyles({
     alignItems: 'center',
     height: 50,
     paddingLeft: 4,
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    background: 'linear-gradient(45deg, #00b8d4 30%, #00e5ff 75%)',
+    borderTopLeftRadius: 3,
+    borderTopRightRadius: 3
   },
   img: {
     height: 255,
@@ -45,6 +47,10 @@ const useStyles = makeStyles({
     overflow: 'hidden',
     width: '100%',
   },
+  stepper: {
+    borderBottomLeftRadius: 3,
+    borderBottomRightRadius: 3,
+  }
 })
 
 const Stepper = () => {
@@ -71,6 +77,7 @@ const Stepper = () => {
         <Typography>{projectSteps[activeStep].label}</Typography>
       </Paper>
       <MobileStepper
+        className={classes.stepper}
         steps={maxSteps}
         position="static"
         variant="text"
