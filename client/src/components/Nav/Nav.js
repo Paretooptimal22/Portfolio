@@ -36,7 +36,8 @@ const useStyles = makeStyles(theme => ({
     paddingRight: '10px',
   },
   appbar: {
-    outlineColor: '#00b8d4'
+    outlineColor: '#00b8d4',
+    maxWidth: '100%'
   }
 }))
 

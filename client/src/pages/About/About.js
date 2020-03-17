@@ -4,15 +4,23 @@ import {
   Container,
   Grid,
   Typography,
-  Paper
+  Paper,
+  Card,
+  CardActionArea,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button
 } from '@material-ui/core'
 import Nav from '../../components/Nav'
+import AboutCard from '../../components/AboutCard'
+import me from '../../components/AboutCard/aboutCardPic/me.jpg'
 
 const useStyles = makeStyles(theme => ({
   root: {
     
   },
-  paper: {
+  grid: {
     
   }
 }))
@@ -22,17 +30,21 @@ const About = () => {
   const classes = useStyles()
 
   return(
-    <Grid container className={classes.root}>
-      {/* <Grid item xs={12} className={classes.nav} alignItems="center" justify="center">
-        <Nav />
-      </Grid> */}
-      <br/>
-      <Grid item xs={12} alignItems="center" justify="center">
-        <Paper elevation={0} variant="outlined" className={classes.paper}>
+    <div className={classes.root}>
+      <Grid container className={classes.grid}>
+        <Grid item xs={12} alignContent="center">
+          <Grid container justify="center">
+            <AboutCard
+              image={me}
+              about="Hello! I am a tech enthusiast who is passionate about helping organizations succeed in a digitally driven world. Please click the arrow below to learn more about me!"
+            />
+          </Grid>
           
-        </Paper>
+        </Grid>
+        
       </Grid>
-    </Grid>
+      
+    </div>
   )
 }
 
