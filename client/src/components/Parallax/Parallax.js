@@ -26,7 +26,7 @@ const Parallaxx = _ => {
         {/* -----basic config-----*/}
         <Parallax
           blur={0}
-          bgImage={require('./parallaxPics/coding.jpg')}
+          bgImage={require('./parallaxPics/tech.jpg')}
           bgImageAlt="coding"
           strength={800}
         >
@@ -34,7 +34,7 @@ const Parallaxx = _ => {
             
             
           </div>
-          <div style={{ height: '500px' }} />
+          <div style={{ height: '600px' }} />
         </Parallax>
 
 

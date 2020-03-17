@@ -36,7 +36,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     height: 50,
     paddingLeft: 4,
-    background: 'linear-gradient(45deg, #00b8d4 30%, #00e5ff 75%)',
+    background: 'linear-gradient(45deg, #18ffff 30%, #00e5ff 65%)',
     borderTopLeftRadius: 3,
     borderTopRightRadius: 3
   },

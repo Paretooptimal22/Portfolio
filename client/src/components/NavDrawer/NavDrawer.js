@@ -28,7 +28,7 @@ const useStyles = makeStyles({
   list: {
     width: 250,
     height: '100%',
-    background: '#00b8d4'
+    background: '#18ffff'
   },
   fullList: {
     width: 'auto',
@@ -114,23 +114,6 @@ const NavDrawerGuts = props => {
                   className={classes.typography}
                   component="span">
                   Projects
-                </Typography>
-              </Grid>
-            </Grid>
-          </ListItem>
-        </Link>
-        {/* contact */}
-        <Link to href="https://github.com/Paretooptimal22" className={classes.link}>
-          <ListItem button key={'Contact'}>
-            <Grid container spacing={3}>
-              <Grid item xs={4} className={classes.icon}>
-                <GitHubIcon />
-              </Grid>
-              <Grid item xs={8} className={classes.gridItem}>
-                <Typography
-                  className={classes.typography}
-                  component="span">
-                  GitHub
                 </Typography>
               </Grid>
             </Grid>

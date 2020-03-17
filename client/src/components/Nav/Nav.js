@@ -16,6 +16,8 @@ import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import DrawerContext from '../../utils/DrawerContext'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -29,9 +31,12 @@ const useStyles = makeStyles(theme => ({
   },
   toolbar: {
     background: '#424242',
-    color: '#00b8d4',
+    color: '#18ffff',
     paddingLeft: '10px',
-    paddingRight: '10px'
+    paddingRight: '10px',
+  },
+  appbar: {
+    outlineColor: '#00b8d4'
   }
 }))
 
@@ -56,7 +61,7 @@ const NavGuts = props => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" elevation={0}>
+      <AppBar position="static" elevation={0} className={classes.appbar}>
         <Toolbar className={classes.toolbar}>
           <IconButton 
             edge="start" 
@@ -66,10 +71,15 @@ const NavGuts = props => {
             onClick={toggleDrawer(true)}>
             <MenuIcon />
           </IconButton>
-          <Typography variant="h4" className={classes.title} align="center">
-            PORTFOLIO
+          <Typography variant="h6" className={classes.title}>
+            KEVIN CHRISTIAN YOUNG
           </Typography>
-          <Button color="inherit"></Button>
+          <Button href="https://github.com/Paretooptimal22" color="inherit">
+            <GitHubIcon />
+          </Button>
+          <Button href="https://linkedin.com/in/kevin-christian-young-323b28103" color="inherit">
+            <LinkedInIcon />
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

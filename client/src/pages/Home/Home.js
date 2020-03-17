@@ -18,8 +18,8 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#424242'
   },
   name: {
-    paddingTop: '25px',
-    color: '#00b8d4'
+    paddingTop: '10px',
+    color: '#18ffff'
   },
   step: {
     margin: 'auto',
@@ -29,10 +29,10 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     paddingTop: '50px',
-    color: '#00b8d4'
+    color: '#18ffff'
   },
   sub: {
-    color: '#00b8d4'
+    color: '#18ffff'
   }
   
 
@@ -45,7 +45,7 @@ const Home = () => {
   return (
     <div className={classes.root}>
       <Grid container className={classes.grid}>
-        <Grid item xs={12} alignItems="center" justify="center">
+        {/* <Grid item xs={12} alignItems="center" justify="center">
           <Typography variant="h5" align="center" className={classes.name} gutterBottom>
             KEVIN CHRISTIAN YOUNG
         </Typography>
@@ -55,7 +55,7 @@ const Home = () => {
             FULL STACK WEB DEVELOPER
         </Typography>
         </Grid>
-        <br />
+        <br /> */}
         <Grid item xs={12}>
           <Parallax />
         </Grid>
