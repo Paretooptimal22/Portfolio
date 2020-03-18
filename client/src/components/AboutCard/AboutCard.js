@@ -15,14 +15,18 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import MoreVertIcon from '@material-ui/icons/MoreVert'
+import Divider from '@material-ui/core/Divider'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemText from '@material-ui/core/ListItemText'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    maxWidth: 345,
-    marginTop: '25px'
+    width: 350,
+    // marginTop: '25px'
   },
   media: {
-    height: 0,
+    // height: 500,
     paddingTop: '100%', // 16:9
   },
   expand: {
@@ -40,7 +44,7 @@ const useStyles = makeStyles(theme => ({
     color: '#424242'
   },
   contentArea: {
-    backgroundColor: '#18ffff',
+    backgroundColor: '#607d8b',
     
   },
   actionsArea: {
@@ -51,17 +55,21 @@ const useStyles = makeStyles(theme => ({
     color: '#424242'
   },
   type: {
-    color: '#424242'
+    color: 'white'
   },
   header: {
     backgroundColor: '#607d8b',
     color: 'white'
+  },
+  divider: {
+    backgroundColor: '#424242'
   }
 }))
 
 const AboutCard = props => {
   const classes = useStyles()
   const [expanded, setExpanded] = React.useState(false)
+  const [dense, setDense] = React.useState(false)
 
   const handleExpandClick = () => {
     setExpanded(!expanded)
@@ -81,7 +89,7 @@ const AboutCard = props => {
         //     <MoreVertIcon />
         //   </IconButton>
         // }
-        title="Business Analyst | Full Stack Web Developer"
+        title="Business Analysis | MERN Stack"
         subheader=""
       />
       <CardMedia
@@ -94,6 +102,7 @@ const AboutCard = props => {
           {props.about}
         </Typography>
       </CardContent>
+      <Divider className={classes.divider} />
       <CardActions className={classes.actionsArea} disableSpacing>
         <IconButton aria-label="add to favorites">
           <GitHubIcon className={classes.icon} />
@@ -114,29 +123,102 @@ const AboutCard = props => {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
+          <Typography variant="h6">Education:</Typography>
+          <List dense={dense}>
+            <ListItem>
+              <ListItemText
+                primary="UC Irvine Division of Continuing Education"
+                secondary="Full Stack Web Development | Feb'20"
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="UC Irvine "
+                secondary="MBA | Jun'19"
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="Cal State Fullerton"
+                secondary="BA Economics | Dec '09"
+              />
+            </ListItem>
+          </List>
+          <Typography variant="h6">Technologies & Skills</Typography>
+          <List>
+            <ListItem>
+              <ListItemText
+                primary="HTML"
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="CSS"
+                secondary="Bootstrap, Materialize, Material-UI"
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="JavaScript"
+                secondary="jQuery"
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="MERN Stack"
+                secondary="MondoDB, Express, React, Node"
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="mySQL"
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="SQL"
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="VBA"
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="Python"
+                secondary="In Progress on Udemy"
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="Tableau"
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="Agile / Scrum"
+              />
+            </ListItem><ListItem>
+              <ListItemText
+                primary="Microsoft Office"
+                secondary="Excel, Access, Word, Outlook"
+              />
+            </ListItem>
+          </List>
+          {/* <Typography variant="h6">Education:</Typography>
           <Typography paragraph>
-            Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
-            minutes.
+            UC Irvine Division of Continuing Education - Full Stack Web Development - Feb '20
           </Typography>
           <Typography paragraph>
-            Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
-            heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
-            browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving chicken
-            and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion, salt and
-            pepper, and cook, stirring often until thickened and fragrant, about 10 minutes. Add
-            saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
+            UC Irvine - MBA - Jun '19
           </Typography>
           <Typography paragraph>
-            Add rice and stir very gently to distribute. Top with artichokes and peppers, and cook
-            without stirring, until most of the liquid is absorbed, 15 to 18 minutes. Reduce heat to
-            medium-low, add reserved shrimp and mussels, tucking them down into the rice, and cook
-            again without stirring, until mussels have opened and rice is just tender, 5 to 7
-            minutes more. (Discard any mussels that don’t open.)
+            Cal State Fullerton - BA Economics - Dec '09
           </Typography>
-          <Typography>
-            Set aside off of the heat to let rest for 10 minutes, and then serve.
-          </Typography>
+          <Typography variant="h6">
+            Technologies and Skills:
+          </Typography> */}
         </CardContent>
       </Collapse>
     </Card>

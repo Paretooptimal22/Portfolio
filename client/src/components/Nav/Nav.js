@@ -73,7 +73,7 @@ const NavGuts = props => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            KEVIN CHRISTIAN YOUNG
+            KEVIN YOUNG
           </Typography>
           <Button href="https://github.com/Paretooptimal22" color="inherit">
             <GitHubIcon />
