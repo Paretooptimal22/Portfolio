@@ -19,6 +19,8 @@ import Divider from '@material-ui/core/Divider'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
+import ExpandLess from '@material-ui/icons/ExpandLess'
+import ExpandMore from '@material-ui/icons/ExpandMore'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -70,9 +72,19 @@ const AboutCard = props => {
   const classes = useStyles()
   const [expanded, setExpanded] = React.useState(false)
   const [dense, setDense] = React.useState(false)
+  const [openEdu, setOpenEdu] = React.useState(true)
+  const [openSkill, setOpenSkill] = React.useState(true)
 
   const handleExpandClick = () => {
     setExpanded(!expanded)
+  }
+
+  const handleClickEdu = () => {
+    setOpenEdu(!openEdu)
+  }
+
+  const handleClickSkill = () => {
+    setOpenSkill(!openSkill)
   }
 
   return (
@@ -104,10 +116,10 @@ const AboutCard = props => {
       </CardContent>
       <Divider className={classes.divider} />
       <CardActions className={classes.actionsArea} disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton href="https://github.com/Paretooptimal22" aria-label="github">
           <GitHubIcon className={classes.icon} />
         </IconButton>
-        <IconButton aria-label="share">
+        <IconButton href="https://linkedin.com/in/kevin-christian-young-323b28103" aria-label="linkedIn">
           <LinkedInIcon className={classes.icon} />
         </IconButton>
         <IconButton
@@ -123,102 +135,104 @@ const AboutCard = props => {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography variant="h6">Education:</Typography>
-          <List dense={dense}>
-            <ListItem>
-              <ListItemText
-                primary="UC Irvine Division of Continuing Education"
-                secondary="Full Stack Web Development | Feb'20"
-              />
+          <List component="nav">
+            <ListItem button 
+              onClick={handleClickEdu}>
+              <Typography variant="h6">Education:</Typography>
+              {openEdu ? <ExpandMore /> : <ExpandLess />}
             </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="UC Irvine "
-                secondary="MBA | Jun'19"
-              />
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="Cal State Fullerton"
-                secondary="BA Economics | Dec '09"
-              />
-            </ListItem>
+            <Collapse in={!openEdu} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                <ListItem>
+                  <ListItemText
+                    primary="UC Irvine Division of Continuing Education"
+                    secondary="Full Stack Web Development | Feb'20"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="UC Irvine "
+                    secondary="MBA | Jun'19"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Cal State Fullerton"
+                    secondary="BA Economics | Dec '09"
+                  />
+                </ListItem>
+              </List>        
+            </Collapse>        
           </List>
-          <Typography variant="h6">Technologies & Skills</Typography>
-          <List>
-            <ListItem>
-              <ListItemText
-                primary="HTML"
-              />
+          <List component="nav">
+            <ListItem button onClick={handleClickSkill}>
+              <Typography variant="h6">Technologies & Skills</Typography>
+              {openSkill ? <ExpandMore /> : <ExpandLess />}
             </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="CSS"
-                secondary="Bootstrap, Materialize, Material-UI"
-              />
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="JavaScript"
-                secondary="jQuery"
-              />
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="MERN Stack"
-                secondary="MondoDB, Express, React, Node"
-              />
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="mySQL"
-              />
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="SQL"
-              />
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="VBA"
-              />
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="Python"
-                secondary="In Progress on Udemy"
-              />
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="Tableau"
-              />
-            </ListItem>
-            <ListItem>
-              <ListItemText
-                primary="Agile / Scrum"
-              />
-            </ListItem><ListItem>
-              <ListItemText
-                primary="Microsoft Office"
-                secondary="Excel, Access, Word, Outlook"
-              />
-            </ListItem>
+            <Collapse in={!openSkill} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                <ListItem>
+                  <ListItemText
+                    primary="HTML"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="CSS"
+                    secondary="Bootstrap, Materialize, Material-UI"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="JavaScript"
+                    secondary="jQuery"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="MERN Stack"
+                    secondary="MongoDB, Express, React, Node"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="mySQL"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="SQL"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="VBA"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Python"
+                    secondary="In Progress on Udemy"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Tableau"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Agile / Scrum"
+                  />
+                </ListItem><ListItem>
+                  <ListItemText
+                    primary="Microsoft Office"
+                    secondary="Excel, Access, Word, Outlook"
+                  />
+                </ListItem>
+              </List>
+            </Collapse>
           </List>
-          {/* <Typography variant="h6">Education:</Typography>
-          <Typography paragraph>
-            UC Irvine Division of Continuing Education - Full Stack Web Development - Feb '20
-          </Typography>
-          <Typography paragraph>
-            UC Irvine - MBA - Jun '19
-          </Typography>
-          <Typography paragraph>
-            Cal State Fullerton - BA Economics - Dec '09
-          </Typography>
-          <Typography variant="h6">
-            Technologies and Skills:
-          </Typography> */}
         </CardContent>
       </Collapse>
     </Card>

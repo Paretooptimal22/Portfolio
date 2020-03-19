@@ -113,7 +113,7 @@ const NavDrawerGuts = props => {
                 <Typography
                   className={classes.typography}
                   component="span">
-                  Projects
+                  Portfolio
                 </Typography>
               </Grid>
             </Grid>
