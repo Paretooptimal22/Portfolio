@@ -73,6 +73,7 @@ const AboutCard = props => {
   const [expanded, setExpanded] = React.useState(false)
   const [dense, setDense] = React.useState(false)
   const [openEdu, setOpenEdu] = React.useState(true)
+  const [openTech, setOpenTech] = React.useState(true)
   const [openSkill, setOpenSkill] = React.useState(true)
 
   const handleExpandClick = () => {
@@ -81,6 +82,10 @@ const AboutCard = props => {
 
   const handleClickEdu = () => {
     setOpenEdu(!openEdu)
+  }
+
+  const handleClickTech = () => {
+    setOpenTech(!openTech)
   }
 
   const handleClickSkill = () => {
@@ -136,8 +141,7 @@ const AboutCard = props => {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <List component="nav">
-            <ListItem button 
-              onClick={handleClickEdu}>
+            <ListItem button onClick={handleClickEdu}>
               <Typography variant="h6">Education:</Typography>
               {openEdu ? <ExpandMore /> : <ExpandLess />}
             </ListItem>
@@ -151,25 +155,25 @@ const AboutCard = props => {
                 </ListItem>
                 <ListItem>
                   <ListItemText
-                    primary="UC Irvine "
-                    secondary="MBA | Jun'19"
+                    primary="UC Irvine Paul Merage School of Business"
+                    secondary="Master of Business Administration | Jun'19"
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemText
-                    primary="Cal State Fullerton"
-                    secondary="BA Economics | Dec '09"
+                    primary="Cal State University, Fullerton"
+                    secondary="Bachelor of Arts Economics | Dec '09"
                   />
                 </ListItem>
               </List>        
             </Collapse>        
           </List>
           <List component="nav">
-            <ListItem button onClick={handleClickSkill}>
-              <Typography variant="h6">Technologies & Skills</Typography>
-              {openSkill ? <ExpandMore /> : <ExpandLess />}
+            <ListItem button onClick={handleClickTech}>
+              <Typography variant="h6">Technologies</Typography>
+              {openTech ? <ExpandMore /> : <ExpandLess />}
             </ListItem>
-            <Collapse in={!openSkill} timeout="auto" unmountOnExit>
+            <Collapse in={!openTech} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
                 <ListItem>
                   <ListItemText
@@ -201,18 +205,13 @@ const AboutCard = props => {
                 </ListItem>
                 <ListItem>
                   <ListItemText
-                    primary="SQL"
-                  />
-                </ListItem>
-                <ListItem>
-                  <ListItemText
                     primary="VBA"
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemText
                     primary="Python"
-                    secondary="In Progress on Udemy"
+                    secondary="In Progress via Udemy"
                   />
                 </ListItem>
                 <ListItem>
@@ -222,12 +221,40 @@ const AboutCard = props => {
                 </ListItem>
                 <ListItem>
                   <ListItemText
-                    primary="Agile / Scrum"
-                  />
-                </ListItem><ListItem>
-                  <ListItemText
                     primary="Microsoft Office"
                     secondary="Excel, Access, Word, Outlook"
+                  />
+                </ListItem>
+              </List>
+            </Collapse>
+          </List>
+          <List component="nav">
+            <ListItem button onClick={handleClickSkill}>
+              <Typography variant="h6">Skills:</Typography>
+              {openSkill ? <ExpandMore /> : <ExpandLess />}
+            </ListItem>
+            <Collapse in={!openSkill} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                <ListItem>
+                  <ListItemText
+                    primary="Teamwork"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Data Analysis"
+                    secondary="Descriptive Statistics | Multiple Linear Regression"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Communication"
+                    secondary="Written | Verbal"
+                  />
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Agile / Scrum"
                   />
                 </ListItem>
               </List>

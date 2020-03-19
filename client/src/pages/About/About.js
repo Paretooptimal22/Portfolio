@@ -64,11 +64,11 @@ const About = () => {
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
-              I also believe in the importance continuous self-improvement and lifelong learning. I am currently taking courses on Udemy to learn "Python for Data Science and Machine Learning." I enjoy learning new skills and technologies, and I'm looking forward for my next topic! 
+              On my free time I like to play soccer, video games, and read about current events in technology/business/economics.  I also enjoy learning new things and acquiring more knowledge.  I believe in lifelong learning and I am always trying to learn something new.  It's fun and it helps me to keep an open mind.
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
-              Please browse my website. I will be continually improving it and adding new projects to the "Portfolio" section as I get better with my programming skills, so please stop by often!  You can also access my GitHub and LinkedIn pages by clicking on the icons in the navbar or on under my picture. Thanks again! - Kevin
+              Please browse my website. It is a work in progress and I will be updating it as I get better with my programming skills, so please stop by often!  You can also access my GitHub and LinkedIn pages by clicking on the icons in the navbar or on under my picture. Thanks again! - Kevin
             </Typography>
           </Grid>
         </Grid>
