@@ -183,7 +183,7 @@ const AboutCard = props => {
                 <ListItem>
                   <ListItemText
                     primary="CSS"
-                    secondary="Bootstrap, Materialize, Material-UI"
+                    secondary="Bootstrap | Materialize | Material-UI"
                   />
                 </ListItem>
                 <ListItem>
@@ -195,7 +195,7 @@ const AboutCard = props => {
                 <ListItem>
                   <ListItemText
                     primary="MERN Stack"
-                    secondary="MongoDB, Express, React, Node"
+                    secondary="MongoDB | Express | React | Node"
                   />
                 </ListItem>
                 <ListItem>
@@ -211,7 +211,7 @@ const AboutCard = props => {
                 <ListItem>
                   <ListItemText
                     primary="Python"
-                    secondary="In Progress via Udemy"
+                    secondary="pandas | matplotlib | plotly | cufflinks"
                   />
                 </ListItem>
                 <ListItem>
@@ -222,7 +222,7 @@ const AboutCard = props => {
                 <ListItem>
                   <ListItemText
                     primary="Microsoft Office"
-                    secondary="Excel, Access, Word, Outlook"
+                    secondary="Excel | Access | Word | Outlook"
                   />
                 </ListItem>
               </List>
@@ -242,8 +242,7 @@ const AboutCard = props => {
                 </ListItem>
                 <ListItem>
                   <ListItemText
-                    primary="Data Analysis"
-                    secondary="Descriptive Statistics | Multiple Linear Regression"
+                    primary="Data Analysis & Visualization"
                   />
                 </ListItem>
                 <ListItem>

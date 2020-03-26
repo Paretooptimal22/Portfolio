@@ -60,11 +60,11 @@ const About = () => {
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
-              I recently earned my MBA and MERN Stack Web Development Certificate from UC Irvine and I am excited to begin working on challenging projects that drive digital transformation.  I am seeking work as a Business Analyst, working with both the business group and techincal team to strategize and implement organizational change that drives innovation.
+              I recently earned my MBA and MERN Stack Web Development Certificate from UC Irvine and I am seeking work as a Business Analyst. I enjoy collaborating with others and I am excited to begin working on challenging projects that drive digital transformation!  
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
-              On my free time I like to play soccer, video games, and read about current events in technology/business/economics.  I also enjoy learning new things and acquiring more knowledge.  I believe in lifelong learning and I am always trying to learn something new.  It's fun and it helps me to keep an open mind.
+              On my free time I like to play soccer, video games, and read about current events in technology/business/economics.  I'm also a bit of an infovore.  I enjoy learning new things and acquiring more knowledge, no matter who random or confusing the topic is.  It's fun and it helps me to keep an open mind.
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
