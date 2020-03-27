@@ -18,11 +18,11 @@ const useStyles = makeStyles(theme => ({
   },
   grid: {
     maxWidth: '100%',
-    backgroundColor: '#424242'
-  },
-  name: {
-    paddingTop: '10px',
-    color: '#18ffff'
+    backgroundColor: '#424242',
+    margin: 'auto',
+    display: 'flex',
+    position: 'relative',
+    justifyContent: 'center'
   },
   cards: {
     margin: 'auto',
@@ -34,9 +34,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: '50px',
     color: '#18ffff'
   },
-  sub: {
-    color: '#18ffff'
-  }
+  
   
 
 }))
@@ -54,12 +52,12 @@ const Home = () => {
       </Grid>
       <br/>
       <Grid container direction="row" spacing={2} className={classes.grid}>
-        <Grid item xs={12} alignItems="center" justify="center" className={classes.title}>
+        <Grid item xs={12} className={classes.title}>
           <Typography variant="h5" align="center" gutterBottom>
             LATEST PROJECTS
         </Typography>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} alignItems="center" justify="center" className={classes.cards}>
+        <Grid item xs={12} sm={6} md={4} className={classes.cards}>
           <ProjectCard 
             image={moodly}
             title="Moodly"
@@ -68,21 +66,21 @@ const Home = () => {
             link="https://paretooptimal22.github.io/moodly/"
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={4} alignItems="center" justify="center" className={classes.cards}>
+        <Grid item xs={12} sm={6} md={4} className={classes.cards}>
           <ProjectCard
             image={flake}
             title="Flake"
             project="Flake"
-            description="Need the perfect excuse to flake out of any situation?  We made an app for that."
+            description="Need the perfect excuse to get out of any situation?  Flake has you covered."
             link="https://tranquil-reef-16365.herokuapp.com/Home"
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={4} alignItems="center" justify="center" className={classes.cards}>
+        <Grid item xs={12} sm={6} md={4} className={classes.cards}>
           <ProjectCard
             image={werk}
             title="WERK"
             project="WERK"
-            description="Join a fitness community and get to WERK! Create your workout or use our workouts."
+            description="Access a vast database of exercises. Create custom workouts. Get to WERK!"
             link="https://fathomless-forest-35789.herokuapp.com/"
           />
         </Grid>

@@ -48,7 +48,7 @@ const ProjectCard = props => {
         title={props.title}
       />
       <CardContent className={classes.contentArea}>
-        <Typography variant="body2" color="textSecondary" component="p" className={classes.type}>
+        <Typography variant="body2" component="p" className={classes.type}>
           {props.description}
         </Typography>
       </CardContent>

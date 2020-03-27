@@ -52,7 +52,7 @@ const About = () => {
         <Grid item xs={12} sm={8}>
           <Grid container direction="column" className={classes.about}>
             <Typography variant="h4" className={classes.title}>
-              About Me
+              ABOUT ME
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
@@ -64,7 +64,7 @@ const About = () => {
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
-              On my free time I like to play soccer, video games, and read about current events in technology/business/economics.  I'm also a bit of an infovore.  I enjoy learning new things and acquiring more knowledge, no matter who random or confusing the topic is.  It's fun and it helps me to keep an open mind.
+              On my free time I like to play soccer, video games, and read about current events in technology/business/economics.  I'm also a bit of an infovore.  I enjoy learning new things and acquiring more knowledge, no matter how random or confusing the topic is.  It's fun and it helps me to keep an open mind.
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
