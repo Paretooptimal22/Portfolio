@@ -72,24 +72,27 @@ const Home = () => {
           <ProjectCard 
             image={moodly}
             title="Moodly"
-            projectName="Moodly"
+            project="Moodly"
             description="Moodly elevates the listening experience by generating playlists matched to your mood."
+            link="https://paretooptimal22.github.io/moodly/"
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4} className={classes.cards}>
           <ProjectCard
             image={flake}
             title="Flake"
-            projectName="Flake"
+            project="Flake"
             description="Need the perfect excuse to flake out of any situation?  We made an app for that."
+            link="https://tranquil-reef-16365.herokuapp.com/Home"
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4} className={classes.cards}>
           <ProjectCard
             image={werk}
             title="WERK"
-            projectName="WERK"
+            project="WERK"
             description="Join a fitness community and get to WERK! Create your workout or use our workouts."
+            link="https://fathomless-forest-35789.herokuapp.com/"
           />
         </Grid>
       </Grid>
