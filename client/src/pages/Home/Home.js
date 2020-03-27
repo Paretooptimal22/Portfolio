@@ -6,7 +6,6 @@ import {
   Typography
 } from '@material-ui/core'
 import Nav from '../../components/Nav'
-import Stepper from '../../components/Stepper'
 import Parallax from '../../components/Parallax'
 
 const useStyles = makeStyles(theme => ({
@@ -66,7 +65,7 @@ const Home = () => {
         </Typography>
         </Grid>
         <Grid item xs={12} className={classes.step}>
-          <Stepper />
+          
         </Grid>
       </Grid>
     </div>
