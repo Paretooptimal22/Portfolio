@@ -8,6 +8,9 @@ import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
+import IconButton from '@material-ui/core/IconButton'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import WebIcon from '@material-ui/icons/Web';
 
 const useStyles = makeStyles({
   root: {
@@ -29,6 +32,9 @@ const useStyles = makeStyles({
   header: {
     backgroundColor: '#607d8b',
     color: 'white'
+  },
+  icon: {
+    color: '#424242'
   },
 })
 
@@ -53,9 +59,12 @@ const ProjectCard = props => {
         </Typography>
       </CardContent>
       <CardActions className={classes.actionArea}>
-        <Button size="small" color="black" href={props.link}>
-          Deployed Site
-        </Button>
+        <IconButton size="small" color="black" href={props.link}>
+          <WebIcon className={classes.icon} />
+        </IconButton>
+        <IconButton href={props.repo} aria-label="github">
+          <GitHubIcon className={classes.icon} />
+        </IconButton>
       </CardActions>
     </Card>
   )

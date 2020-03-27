@@ -54,8 +54,18 @@ const Home = () => {
       <Grid container direction="row" spacing={2} className={classes.grid}>
         <Grid item xs={12} className={classes.title}>
           <Typography variant="h5" align="center" gutterBottom>
-            LATEST PROJECTS
-        </Typography>
+            UPDATES & LATEST PROJECTS
+          </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.title}>
+          <Typography variant="h6" align="left" gutterBottom>
+            3/27/2020
+          </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.title}>
+          <Typography variant="body1" align="left" gutterBottom>
+            Welcome to to my portfolio! Please take a look at the team projects from UC Irvine's coding bootcamp. There are links to the deployed website and the GitHub repositories for each project as well.  Please check back often as I will be adding new projects and improving the website at least once a month.
+          </Typography>
         </Grid>
         <Grid item xs={12} sm={6} md={4} className={classes.cards}>
           <ProjectCard 
@@ -64,6 +74,7 @@ const Home = () => {
             project="Moodly"
             description="Moodly elevates the listening experience by generating playlists matched to your mood."
             link="https://paretooptimal22.github.io/moodly/"
+            repo="https://github.com/Paretooptimal22/moodly"
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4} className={classes.cards}>
@@ -73,6 +84,7 @@ const Home = () => {
             project="Flake"
             description="Need the perfect excuse to get out of any situation?  Flake has you covered."
             link="https://tranquil-reef-16365.herokuapp.com/Home"
+            repo="https://github.com/Paretooptimal22/flake"
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4} className={classes.cards}>
@@ -82,6 +94,7 @@ const Home = () => {
             project="WERK"
             description="Access a vast database of exercises. Create custom workouts. Get to WERK!"
             link="https://fathomless-forest-35789.herokuapp.com/"
+            repo="https://github.com/Paretooptimal22/werk"
           />
         </Grid>
       </Grid>
