@@ -7,6 +7,10 @@ import {
 } from '@material-ui/core'
 import Nav from '../../components/Nav'
 import Parallax from '../../components/Parallax'
+import ProjectCard from '../../components/ProjectCard'
+import moodly from '../../components/ProjectCard/projectPics/moodly.PNG'
+import werk from '../../components/ProjectCard/projectPics/werk.PNG'
+import flake from '../../components/ProjectCard/projectPics/flake.PNG'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -20,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: '10px',
     color: '#18ffff'
   },
-  step: {
+  cards: {
     margin: 'auto',
     display: 'flex',
     position: 'relative',
@@ -64,8 +68,29 @@ const Home = () => {
             LATEST PROJECTS
         </Typography>
         </Grid>
-        <Grid item xs={12} className={classes.step}>
-          
+        <Grid item xs={12} sm={6} md={4} className={classes.cards}>
+          <ProjectCard 
+            image={moodly}
+            title="Moodly"
+            projectName="Moodly"
+            description="Moodly elevates the listening experience by generating playlists matched to your mood."
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} className={classes.cards}>
+          <ProjectCard
+            image={flake}
+            title="Flake"
+            projectName="Flake"
+            description="Need the perfect excuse to flake out of any situation?  We made an app for that."
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} className={classes.cards}>
+          <ProjectCard
+            image={werk}
+            title="WERK"
+            projectName="WERK"
+            description="Join a fitness community and get to WERK! Create your workout or use our workouts."
+          />
         </Grid>
       </Grid>
     </div>
