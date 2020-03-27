@@ -48,27 +48,18 @@ const Home = () => {
   return (
     <div className={classes.root}>
       <Grid container className={classes.grid}>
-        {/* <Grid item xs={12} alignItems="center" justify="center">
-          <Typography variant="h5" align="center" className={classes.name} gutterBottom>
-            KEVIN CHRISTIAN YOUNG
-        </Typography>
-        </Grid>
-        <Grid item xs={12} alignItems="center" justify="center">
-          <Typography variant="subtitle1" align="center" className={classes.sub} gutterBottom>
-            FULL STACK WEB DEVELOPER
-        </Typography>
-        </Grid>
-        <br /> */}
         <Grid item xs={12}>
           <Parallax />
         </Grid>
-        <br />
+      </Grid>
+      <br/>
+      <Grid container direction="row" spacing={2} className={classes.grid}>
         <Grid item xs={12} alignItems="center" justify="center" className={classes.title}>
           <Typography variant="h5" align="center" gutterBottom>
             LATEST PROJECTS
         </Typography>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} className={classes.cards}>
+        <Grid item xs={12} sm={6} md={4} alignItems="center" justify="center" className={classes.cards}>
           <ProjectCard 
             image={moodly}
             title="Moodly"
@@ -77,7 +68,7 @@ const Home = () => {
             link="https://paretooptimal22.github.io/moodly/"
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={4} className={classes.cards}>
+        <Grid item xs={12} sm={6} md={4} alignItems="center" justify="center" className={classes.cards}>
           <ProjectCard
             image={flake}
             title="Flake"
@@ -86,7 +77,7 @@ const Home = () => {
             link="https://tranquil-reef-16365.herokuapp.com/Home"
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={4} className={classes.cards}>
+        <Grid item xs={12} sm={6} md={4} alignItems="center" justify="center" className={classes.cards}>
           <ProjectCard
             image={werk}
             title="WERK"
