@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/Paretooptimal22/Portfolio/issues"
   },
-  "homepage": "https://github.com/Paretooptimal22/Portfolio#readme",
+  "homepage": "https://paretooptimal22.github.io/Portfolio/",
   "dependencies": {
     "concurrently": "^5.1.0",
     "dotenv": "^8.2.0",
