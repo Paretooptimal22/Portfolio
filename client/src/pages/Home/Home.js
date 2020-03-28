@@ -31,10 +31,16 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
   },
   title: {
-    paddingTop: '50px',
+    paddingTop: '25px',
     color: '#18ffff'
   },
-  
+  body: {
+    color: 'white'
+  },
+  title2: {
+    marginTop: '50px',
+    color: '#18ffff'
+  },
   
 
 }))
@@ -57,14 +63,15 @@ const Home = () => {
             WELCOME TO MY PORTFOLIO!
           </Typography>
         </Grid>
-        {/* <Grid item xs={12} className={classes.title}>
-          <Typography variant="h6" align="left" gutterBottom>
-            3/27/2020
-          </Typography>
-        </Grid> */}
         <Grid item xs={12} className={classes.title}>
-          <Typography variant="body1" align="left" gutterBottom>
-            I created this website to demonstrate my recently acquired technical skills in web development from UC Irvine's coding bootcamp.  Please take a look at the team projects that I contributed to. There are links to the deployed website and the GitHub repositories for each project as well.  Please check back often as I will try to add new projects and improve the website at least once a month.
+          <Typography variant="body1" align="center" className={classes.body} gutterBottom>
+            I created this website to demonstrate my recently acquired technical skills in web development from UC Irvine's coding bootcamp.  Please check back often as I will be adding new projects and continually improving the website. Lastly, the website is responsive, so please give it a look on a phone or tablet as well.  Thank you!
+          </Typography>
+        </Grid>
+        <br/>
+        <Grid item xs={12} className={classes.title2}>
+          <Typography variant="h5" align="center" gutterBottom>
+            RECENTLY ADDED PROJECTS
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} md={4} className={classes.cards}>
@@ -96,7 +103,7 @@ const Home = () => {
             link="https://fathomless-forest-35789.herokuapp.com/"
             repo="https://github.com/Paretooptimal22/werk"
           />
-        </Grid>
+        </Grid> */}
       </Grid>
     </div>
     

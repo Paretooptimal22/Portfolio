@@ -27,6 +27,9 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     color: '#18ffff'
+  },
+  body: {
+    color: 'white'
   }
 
 }))
@@ -43,6 +46,11 @@ const Projects = () => {
           <Typography variant="h4" align="center">
             PORTFOLIO
           </Typography>
+          <Grid item xs={12} className={classes.title}>
+            <Typography variant="body1" align="center" className={classes.body} gutterBottom>
+              Please take a look at the team projects that I contributed to. There are links to the deployed website and the GitHub repositories for each project as well.  
+          </Typography>
+          </Grid>
         </Grid>
       </Grid>
       <Grid container direction="row" spacing={2} className={classes.grid}>

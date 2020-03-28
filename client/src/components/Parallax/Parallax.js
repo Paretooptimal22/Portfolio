@@ -34,7 +34,7 @@ const Parallaxx = _ => {
             
             
           </div>
-          <div style={{ height: '600px' }} />
+          <div style={{ height: '500px' }} />
         </Parallax>
 
 
