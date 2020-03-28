@@ -54,17 +54,17 @@ const Home = () => {
       <Grid container direction="row" spacing={2} className={classes.grid}>
         <Grid item xs={12} className={classes.title}>
           <Typography variant="h5" align="center" gutterBottom>
-            UPDATES & LATEST PROJECTS
+            WELCOME TO MY PORTFOLIO!
           </Typography>
         </Grid>
-        <Grid item xs={12} className={classes.title}>
+        {/* <Grid item xs={12} className={classes.title}>
           <Typography variant="h6" align="left" gutterBottom>
             3/27/2020
           </Typography>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} className={classes.title}>
           <Typography variant="body1" align="left" gutterBottom>
-            Welcome to to my portfolio! Please take a look at the team projects from UC Irvine's coding bootcamp. There are links to the deployed website and the GitHub repositories for each project as well.  Please check back often as I will be adding new projects and improving the website at least once a month.
+            I created this website to demonstrate my recently acquired technical skills in web development from UC Irvine's coding bootcamp.  Please take a look at the team projects that I contributed to. There are links to the deployed website and the GitHub repositories for each project as well.  Please check back often as I will try to add new projects and improve the website at least once a month.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} md={4} className={classes.cards}>
