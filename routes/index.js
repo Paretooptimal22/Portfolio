@@ -1,3 +1,3 @@
 module.exports = app => {
-  require('./htmlRoutes/js')(app)
+  require('./htmlRoutes.js')(app)
 }

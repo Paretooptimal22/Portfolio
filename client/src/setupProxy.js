@@ -4,10 +4,8 @@ module.exports = function(app) {
   app.use(
     proxy(
       [
-        '/home',
-        '/about',
-        '/projects'
-      ], { taget: 'https://localhost:3001', changeOrigin: true }
+        '*'
+      ], { taget: 'http://localhost:3001', changeOrigin: true }
     )
   )
 }
