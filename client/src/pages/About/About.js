@@ -60,7 +60,7 @@ const About = () => {
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
-              I recently received my Full Stack Web Development Certificate from UC Irvine on February 2020, and I earned my MBA, also from UC Irvine, on June 2019. I decided to learn to code to have a better understanding of digital technologies and what goes on in the background.  
+              I received my Full Stack Web Development Certificate from UC Irvine on February 2020, and I earned my MBA, also from UC Irvine, on June 2019. I decided to learn to code to have a better understanding of digital technologies and what goes on in the background.  
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
