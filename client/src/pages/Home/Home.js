@@ -65,7 +65,7 @@ const Home = () => {
         </Grid>
         <Grid item xs={12} className={classes.title}>
           <Typography variant="body1" align="center" className={classes.body} gutterBottom>
-            I created this website to demonstrate my recently acquired technical skills in web development from UC Irvine's coding bootcamp.  Please check back often as I will be adding new projects and continually improving the website. Lastly, the website is responsive, so please give it a look on a phone or tablet as well.  Thank you!
+            I created this website to share some of the projects I have completed and to give a little bit of information about myself. The website is responsive, so please give it a look on your desktop, phone, or tablet.  Thank you!
           </Typography>
         </Grid>
         <br/>

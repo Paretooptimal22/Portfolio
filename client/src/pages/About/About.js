@@ -60,11 +60,11 @@ const About = () => {
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
-              I recently received my Full Stack Web Development Certificate from UC Irvine on February 2020, and I earned my MBA, also from UC Irvine, on June 2019. Thanks to the business/data analysis skills from the MBA and the programming skills from the coding bootcamp, I am uniquely positioned to excel as a Business Analyst.  I am excited to begin working on challenging projects with business and IT teams to drive digital transformation!
+              I recently received my Full Stack Web Development Certificate from UC Irvine on February 2020, and I earned my MBA, also from UC Irvine, on June 2019. I decided to learn to code to have a better understanding of digital technologies and what goes on in the background.  
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
-              On my free time I like to play soccer, video games, and read about current events in technology/business/economics.  I'm also a bit of an infovore.  I enjoy learning and acquiring more knowledge.  It's fun and it helps me to keep an open mind. 
+              On my free time I like to strength train with Russian kettle bells, play soccer, video games, and read about current events in technology/business/economics. I also enjoy learning new things and acquiring more knowledge.  It's fun and it helps me to keep an open mind. 
             </Typography>
             <br/>
             <Typography variant="body1" className={classes.paragraph}>
